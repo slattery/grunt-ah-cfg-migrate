@@ -68,7 +68,7 @@ Once you have your Gruntfile done, and making sure your plugin's `package.json` 
 ## Assumptions
 Right now we assume a lot of things: that your paths are going to start at `./config`:
 
-```txt
+```
 AH plugin:
 ===========================
 ├── README.md
@@ -113,10 +113,10 @@ Like this:
 ( pretend we're in the plugin's config/faye.js )
 ```js
 exports.singlebox = {
-\\ extend timeout for faye
-	var fivehunnert = require('cinco-to-the-second-power');
+// extend timeout for faye
   faye: function(api){
-  return {
+		var fivehunnert = require('cinco-to-the-second-power');
+		return {
     	timeout: fivehunnert
     }
   }
@@ -134,8 +134,8 @@ exports.clustered = {
 Not like this:
 ( keep pretending we're in the plugin's config/faye.js )
 ```js
-\\ extend timeout for faye
-	var fivehunnert = require('cinco-to-the-second-power');
+// extend timeout for faye
+var fivehunnert = require('cinco-to-the-second-power');
 
 exports = {
 		singlebox = {

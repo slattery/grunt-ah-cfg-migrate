@@ -138,16 +138,16 @@ Not like this:
 var fivehunnert = require('cinco-to-the-second-power');
 
 exports = {
-		singlebox = {
+	singlebox : {
 		faye: function(api){
-		return {
+			return {
 				timeout: fivehunnert
 			}
 		}
   },
- 		clustered = {
+ 	clustered : {
 		faye: function(api){
-		return {
+			return {
 				timeout: 500
 			}
 		}

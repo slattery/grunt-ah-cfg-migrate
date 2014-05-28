@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 
 #### configs.files.src
 Type: `Globbing Pattern`
-Default value: `'['config/**/*.js']'`
+Default value: `['config/**/*.js']`
 
 The above string means look in the "config" directory of the plugin or module you are installing to your actionhero project, and grab all the files that end in ".js".   We assume that this config directory will map to the parent project's "config" directory.  We will use these files to scoop up the config blocks for one or more actionhero runtime environments, add them to corresponding files when those files exist, update the blocks within the target files if those blocks exist, or simply create the new file if there is no corresponding target file.
 
@@ -113,19 +113,19 @@ Like this:
 ( pretend we're in the plugin's config/faye.js )
 ```js
 exports.singlebox = {
-// extend timeout for faye
-  faye: function(api){
-		var fivehunnert = require('cinco-to-the-second-power');
-		return {
-    	timeout: fivehunnert
+  // extend timeout for faye
+  faye: function (api) {
+    var fivehunnert = require('cinco-to-the-second-power');
+    return {
+      timeout: fivehunnert
     }
   }
 };
 
 exports.clustered = {
-  faye: function(api){
-  return {
-    	timeout: 500
+  faye: function (api) {
+    return {
+      timeout: 500
     }
   }
 };
@@ -138,20 +138,20 @@ Not like this:
 var fivehunnert = require('cinco-to-the-second-power');
 
 exports = {
-	singlebox : {
-		faye: function(api){
-			return {
-				timeout: fivehunnert
-			}
-		}
+  singlebox: {
+    faye: function (api) {
+      return {
+        timeout: fivehunnert
+      }
+    }
   },
- 	clustered : {
-		faye: function(api){
-			return {
-				timeout: 500
-			}
-		}
-  } 
+  clustered: {
+    faye: function (api) {
+      return {
+        timeout: 500
+      }
+    }
+  }
 };
 ```
 

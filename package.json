@@ -1,0 +1,53 @@
+{
+  "name": "grunt-ah-cfg-migrate",
+  "description": "Migrate local config JSON to an AH project",
+  "version": "0.1.0",
+  "homepage": "https://github.com/slattery/grunt-ah-cfg-migrate",
+  "author": {
+    "name": "slattery",
+    "email": "mike.slattery+gh@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/slattery/grunt-ah-cfg-migrate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slattery/grunt-ah-cfg-migrate/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/slattery/grunt-ah-cfg-migrate/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "actionhero"
+  ],
+  "dependencies": {
+    "chalk": "x",
+    "mkdirp": "x",
+    "grunt": "x",
+    "esprima": "x",
+    "escodegen": "x",
+    "falafel": "x"
+  },
+  "bundledDependencies": [
+
+  ]
+}
